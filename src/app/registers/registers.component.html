@@ -1,55 +1,81 @@
 <div class="register-wrapper">
-<div class="card">
-    <div class="card-body">
-<form>
-    
-    <h1 class="h3 mb-3 fw-normal">Register for user</h1>
-
-    <div class="form-floating">
-        <input type="text" class="form-control" id="firstName" >
-      <label for="firstName">firstName</label>
-    </div>
-    <div class="form-floating">
-      <input type="text" class="form-control" id="lastName" >
-      <label for="lastName">lastName</label>
-    </div>
-    <p class="mb-3">Gender</p>
-
-          <div class="my-3">
-            <div class="form-check">
-              <input id="male" name="Gender" type="radio" class="form-check-input" checked required>
-              <label class="form-check-label" for="male">Male</label>
-            </div>
-            <div class="form-check">
-              <input id="female" name="Gender" type="radio" class="form-check-input" required>
-              <label class="form-check-label" for="female">Female</label>
-            </div>
-            <div class="form-check">
-              <input id="others" name="Gender" type="radio" class="form-check-input" required>
-              <label class="form-check-label" for="others">Others</label>
-            </div>
-          </div>
-
-    
-      <div class="form-floating">
-        <input type="text" class="form-control" id="Dob" >
-        <label for="Dob">Date Of Birth</label>
-      </div>
-      <div class="form-floating">
-        <input type="text" class="form-control" id="email" >
-        <label for="email">email</label>
-      </div>
-      <div class="form-floating">
-        <input type="text" class="form-control" id="phone" >
-        <label for="phone">Phone number</label>
-      </div>
+<div class="card card-body crd" id="card-imp">
+ <form >
+  <h3>Registration page</h3>
+  <label for="firstname" required>FirstName:
+  <style>
+    .required.after {
+      content:"*";
+      color:red;
+    }
+  </style>
+<span style="color:#ff0000">*</span></label>
+  <br>
+  <input type="text" placeholder="Enter the Firstname" id="firstname">
+  <br>
+  <label for="lastname">LastName:<style>
+    .required.after {
+      content:"*";
+      color:red;
+    }
+  </style>
+<span style="color:#ff0000">*</span></label>
   
+ <br>
+  <input type="text" placeholder="Enter the Lastname" id="lastname" required><br>
+  <label for="middlename">MiddleName:
+  <style>
+    .required.after {
+      content:"*";
+      color:red;
+    }
+  </style>
+<span style="color:#ff0000">*</span></label>
+ <br>
+  <input type="text" placeholder="Enter the Middlename" id="middlename" required><br>
+  <label for="inputEmail">Email address:
+  <style>
+    .required.after {
+      content:"*";
+      color:red;
+    }
+  </style>
+<span style="color:#ff0000">*</span></label>
+ <br>
+  <input type="email" id="inputEmail" placeholder="Email address" required autofocus><br>
+  <label for="phonenumber" >Phone Number:
+  <style>
+    .required.after {
+      content:"*";
+      color:red;
+    }
+  </style>
+<span style="color:#ff0000">*</span></label>
+ <br>
+  <input type="text" placeholder="Enter the Phone number" id="phonenumber" required><br>
+  <label for="DOB">Date Of Birth:<style>
+    .required.after {
+      content:"*";
+      color:red;
+    }
+  </style>
+<span style="color:#ff0000">*</span></label>
+ <br>
+  <input type="date" id="DOB" placeholder="dd-mm-yyyy"required><br>
+  <p class="d-flex flex-row justify-content-center">Gender:<style>
+    .required.after {
+      content:"*";
+      color:red;
+    }
+  </style>
+<span style="color:#ff0000">*</span>
+  <input type="radio" class="rbtn" name="gender" value="male"required> Male
+  <br>
+  <input type="radio" name="gender" value="female"required> Female <br>
+   </p>
+   <button class="btn btn-primary">Submit</button>
+    </form>
     
-
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
-    
-  </form>
-  </div>
   </div>
 </div>
 
